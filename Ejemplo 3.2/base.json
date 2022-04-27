@@ -1,0 +1,64 @@
+{
+    "alumnos": [
+        {
+            "id_alumno": 1,
+            "nombre_alumno": "Julio",
+            "edad": 28,
+            "hobby" : [
+                "aaaaaa", "bbbbbb", "cccccc"
+            ],
+            "ruta": "/consulta",
+            "imagen": "https://as01.epimg.net/meristation/imagenes/2021/03/13/reportajes/1615633069_923466_1616262218_noticia_normal.jpg"
+        },
+        {
+            "id_alumno": 2,
+            "nombre_alumno": "Leandro",
+            "edad": 22,
+            "hobby" : [
+                "aaaaaa", "bbbbbb", "cccccc"
+            ],
+            "ruta": "/consulta",
+            "imagen": "https://wwwhatsnew.com/wp-content/uploads/2020/01/Los-mejores-sitios-web-para-aficionados-al-anime-1.jpg"
+        },
+        {
+            "id_alumno": 3,
+            "nombre_alumno": "Hector",
+            "edad": 23,
+            "hobby" : [
+                "aaaaaa", "bbbbbb", "cccccc"
+            ],
+            "ruta": "/consulta",
+            "imagen": "https://media.vandalsports.com/i/640x360/2-2022/2022222185755_1.jpg"
+        },
+        {
+            "id_alumno": 4,
+            "nombre_alumno": "Matias",
+            "edad": 24,
+            "hobby" : [
+                "aaaaaa", "bbbbbb", "cccccc"
+            ],
+            "ruta": "/consulta",
+            "imagen": "https://www.masgamers.com/wp-content/uploads/2021/08/consumo-de-anime.jpg"
+        },
+        {
+            "id_alumno": 5,
+            "nombre_alumno": "Brian",
+            "edad": 25,
+            "hobby" : [
+                "aaaaaa", "bbbbbb", "cccccc"
+            ],
+            "ruta": "/consulta",
+            "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/08/naruto-naruto-uzumaki-2425679.jpg?itok=cSHefN5K"
+        },
+        {
+            "id_alumno": 6,
+            "nombre_alumno": "Rodrigo",
+            "edad": 26,
+            "hobby" : [
+                "aaaaaa", "bbbbbb", "cccccc"
+            ],
+            "ruta": "/consulta",
+            "imagen": "https://www.industriaanimacion.com/wp-content/uploads/2020/12/Cover-23.jpg"
+        }
+    ]
+}
