@@ -1,0 +1,46 @@
+{
+    "alumnos": [
+        {
+            "id_alumno": 1,
+            "nombre_alumno": "Julio"
+        },
+        {
+            "id_alumno": 2,
+            "nombre_alumno": "Leandro"
+        },
+        {
+            "id_alumno": 3,
+            "nombre_alumno": "Hector"
+        },
+        {
+            "id_alumno": 4,
+            "nombre_alumno": "Matias"
+        },
+        {
+            "id_alumno": 5,
+            "nombre_alumno": "Brian"
+        },
+        {
+            "id_alumno": 6,
+            "nombre_alumno": "Rodrigo"
+        }
+    ],
+    "cursos": [
+        {
+            "id_curso": 1,
+            "nombre_curso": "Matematicas"
+        },
+        {
+            "id_curso": 2,
+            "nombre_curso": "Lenguaje"
+        },
+        {
+            "id_curso": 3,
+            "nombre_curso": "Programacion Web"
+        },
+        {
+            "id_curso": 4,
+            "nombre_curso": "Programacion de Base de Datos"
+        }
+    ]
+}

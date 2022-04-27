@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table tabla-hover w-100">
+                    <thead>
+                        <tr>
+                            <td>ID Alumno</td>
+                            <td>Nombre Alumno</td>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTablaAlumno">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <table class="table table-hover w-100">
+                    <thead>
+                        <tr>
+                            <th>ID Curso</th>
+                            <th>Nombre del Curso</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTablaCurso">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $.get('base.json',
+            function (resultado) {
+                let contenido = ''
+                for (let i = 0; i < resultado.alumnos.length; i++) {
+                    contenido += `
+                        <tr>
+                            <td>${resultado.alumnos[i].id_alumno}</td>
+                            <td>${resultado.alumnos[i].nombre_alumno}</td>
+                        </tr>                    
+                    `;                    
+                }
+                
+                $("#cuerpoTablaAlumno").html(contenido)
+
+                let contenido2 = ''
+                for (let i = 0; i < resultado.cursos.length; i++) {
+                    contenido2 += `
+                        <tr>
+                            <td>${resultado.cursos[i].id_curso}</td>
+                            <td>${resultado.cursos[i].nombre_curso}</td>
+                        </tr>                    
+                    `;    
+                    console.log(contenido2);                
+                }
+                $("#cuerpoTablaCurso").html(contenido2)
+            }
+        );
+    </script>
+
+</body>
+
+</html>
